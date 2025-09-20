@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="weather-bg" id="weatherBg">
+        <div class="floating-shapes">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
+        <div class="weather-overlay"></div>
+    </div>
+    <div class="container">
+        <h1>🌤️ Real-Time Weather App</h1>
+        <p style="color: white; margin-bottom: 20px; opacity: 0.9;">Get live weather data for any city worldwide!</p>
+        <div class="search-box">
+            <input type="text" id="inputCity" placeholder="Enter any city name (e.g., London, Tokyo, Mumbai...)">
+            <button id="getWeather">🔍 Get Weather</button>
+        </div>
+        <div id="result" class="weather-result"></div>
+        <div class="cities-grid">
+            <h3>Quick Access Cities:</h3>
+            <div class="city-cards">
+                <div class="city-card" onclick="selectCity('London')">
+                    <span class="city-name">London</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('New York')">
+                    <span class="city-name">New York</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Tokyo')">
+                    <span class="city-name">Tokyo</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Mumbai')">
+                    <span class="city-name">Mumbai</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Paris')">
+                    <span class="city-name">Paris</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Dubai')">
+                    <span class="city-name">Dubai</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Mahesana')">
+                    <span class="city-name">Mahesana</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Vadodara')">
+                    <span class="city-name">Vadodara</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Surat')">
+                    <span class="city-name">Surat</span>
+                    <span class="temp">Live</span>
+                </div>
+                <div class="city-card" onclick="selectCity('Ahmedabad')">
+                    <span class="city-name">Ahmedabad</span>
+                    <span class="temp">Live</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
