@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Income Calculator</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',sans-serif}
+.container{background:rgba(255,255,255,0.95);padding:40px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.3);backdrop-filter:blur(10px);text-align:center;min-width:400px}
+h1{color:#333;margin-bottom:30px;font-size:28px;text-shadow:2px 2px 4px rgba(0,0,0,0.1)}
+input{width:100%;padding:15px;margin:15px 0;border:3px solid #667eea;border-radius:10px;font-size:18px;transition:all 0.3s ease}
+input:focus{outline:none;border-color:#764ba2;transform:scale(1.02);box-shadow:0 0 20px rgba(102,126,234,0.3)}
+button{width:100%;background:linear-gradient(45deg,#667eea,#764ba2);color:white;padding:18px;border:none;border-radius:10px;font-size:20px;font-weight:bold;cursor:pointer;transition:all 0.3s ease;text-transform:uppercase;letter-spacing:1px}
+button:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.3)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💰 Income Calculator</h1>
+<form action="/incomeresult" method="post">
+<input type="number" name="s1" placeholder="💼 Primary Income" required>
+<input type="number" name="s2" placeholder="💸 Secondary Income" required>
+<button type="submit">Calculate Total</button>
+</form>
+</div>
+</body>
+</html>

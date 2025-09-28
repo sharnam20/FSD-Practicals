@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Income Results</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:linear-gradient(135deg,#11998e 0%,#38ef7d 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:'Segoe UI',sans-serif}
+.container{background:rgba(255,255,255,0.95);padding:50px;border-radius:25px;box-shadow:0 25px 50px rgba(0,0,0,0.3);backdrop-filter:blur(15px);text-align:center;min-width:450px;animation:slideIn 0.6s ease-out}
+@keyframes slideIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+h1{color:#333;margin-bottom:40px;font-size:32px;text-shadow:2px 2px 4px rgba(0,0,0,0.1)}
+.result{background:linear-gradient(45deg,#11998e,#38ef7d);color:white;padding:25px;margin:20px 0;border-radius:15px;font-size:22px;font-weight:bold;box-shadow:0 8px 20px rgba(0,0,0,0.2);transition:transform 0.3s ease}
+.result:hover{transform:scale(1.05)}
+.total{background:linear-gradient(45deg,#ff6b6b,#ffa500);font-size:28px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+a{display:inline-block;background:linear-gradient(45deg,#667eea,#764ba2);color:white;padding:15px 30px;text-decoration:none;border-radius:10px;font-weight:bold;margin-top:30px;transition:all 0.3s ease;text-transform:uppercase;letter-spacing:1px}
+a:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(0,0,0,0.3)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>💰 Income Summary</h1>
+<div class="result">Primary: $<%= s1 %></div>
+<div class="result">Secondary: $<%= s2 %></div>
+<div class="result total">Total Income: $<%= total %></div>
+<a href="/income">Calculate Again</a>
+</div>
+</body>
+</html>
