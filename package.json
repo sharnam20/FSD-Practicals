@@ -1,0 +1,27 @@
+{
+  "name": "express_mern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.8.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NisargPatel03/FSD_Practice.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NisargPatel03/FSD_Practice/issues"
+  },
+  "homepage": "https://github.com/NisargPatel03/FSD_Practice#readme",
+  "description": ""
+}
