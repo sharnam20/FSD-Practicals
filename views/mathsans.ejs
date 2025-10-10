@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Results</title>
+<style>
+body{background:#34495e;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;margin:0}
+.container{background:white;padding:40px;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.3);text-align:center;min-width:400px}
+h1{color:#333;margin-bottom:30px;font-size:28px}
+.result{background:linear-gradient(45deg,#667eea,#764ba2);color:white;padding:20px;margin:15px 0;border-radius:10px;font-size:20px;font-weight:bold}
+.total{background:linear-gradient(45deg,#ff6b6b,#ffa500);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.02)}}
+a{display:inline-block;background:linear-gradient(45deg,#4ecdc4,#44a08d);color:white;padding:15px 30px;text-decoration:none;border-radius:10px;font-weight:bold;margin-top:30px;transition:all 0.3s}
+a:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,0.3)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🎆 Math Results</h1>
+<p style="font-size:18px;color:#666;margin-bottom:25px">Results for <strong><%= a %></strong> and <strong><%= b %></strong>:</p>
+<div class="result">➕ Addition: <%= add %></div>
+<div class="result">➖ Subtraction: <%= sub %></div>
+<div class="result">✖️ Multiplication: <%= mul %></div>
+<div class="result">➗ Division: <%= div %></div>
+<a href="/maths">🔄 Calculate Again</a>
+</div>
+</body>
+</html>

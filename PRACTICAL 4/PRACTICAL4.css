@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e3f2fd;
+    margin: 0;
+    padding: 40px;
+}
+
+div {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #1976d2;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.count-animate {
+    animation: countPulse 0.5s ease;
+}
+
+@keyframes countPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); color: #4CAF50; }
+    100% { transform: scale(1); }
+}
+
+button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 8px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 8px rgba(25, 118, 210, 0.3);
+    outline: none;
+}
+
+h3 {
+    color: #333;
+    margin: 10px 0;
+}

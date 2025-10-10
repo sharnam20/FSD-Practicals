@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Calculator</title>
+<style>
+body{background:#2c3e50;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;margin:0}
+.container{background:white;padding:40px;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.3);text-align:center;min-width:350px}
+h1{color:#333;margin-bottom:30px;font-size:24px}
+input{width:100%;padding:15px;margin:10px 0;border:2px solid #ff6b6b;border-radius:10px;font-size:16px;box-sizing:border-box}
+input:focus{outline:none;border-color:#4ecdc4;box-shadow:0 0 10px rgba(78,205,196,0.5)}
+button{width:100%;background:linear-gradient(45deg,#ff6b6b,#4ecdc4);color:white;padding:15px;border:none;border-radius:10px;font-size:18px;font-weight:bold;cursor:pointer;margin-top:20px}
+button:hover{transform:translateY(-2px);box-shadow:0 5px 15px rgba(0,0,0,0.3)}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🧮 Math Calculator</h1>
+<form action="/mathsans" method="post">
+<input type="number" name="num1" placeholder="Enter First Number" required>
+<input type="number" name="num2" placeholder="Enter Second Number" required>
+<button type="submit">Calculate All Operations</button>
+</form>
+</div>
+</body>
+</html>
