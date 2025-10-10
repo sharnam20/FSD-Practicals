@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todo-app {
+  width: 700px;
+  height: 700px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+  padding: 20px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.todo-app.light {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.todo-app.dark {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #fff;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.todo-header h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.theme-toggle {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+
+
+.stats-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.stat {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+
+
+.stat-number {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: none;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  opacity: 0.8;
+  color: white;
+}
+
+.todo-form {
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.category-select {
+  padding: 15px;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.category-select option {
+  background: #333;
+  color: white;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 16px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.todo-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.todo-input:focus {
+  outline: none;
+  background: rgba(255,255,255,0.3);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.todo-add {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #e74c3c;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+}
+
+
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+
+
+.filters button.active {
+  background: linear-gradient(135deg, #a55eea, #26de81);
+  box-shadow: 0 4px 15px rgba(165, 94, 234, 0.3);
+}
+
+.todo-list {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  opacity: 0.7;
+}
+
+.empty-icon {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.empty-state p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.empty-state small {
+  opacity: 0.8;
+  color: white;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 4px solid #e74c3c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+
+.todo-item.completed {
+  opacity: 0.6;
+  border-left-color: #4CAF50;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #4CAF50;
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-text {
+  display: block;
+  font-size: 1.1em;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.todo-item.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.category {
+  font-size: 0.9em;
+  opacity: 0.8;
+  color: #e74c3c;
+}
+
+.priority-select {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.priority-select option {
+  background: #333;
+  color: white;
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ff4757, #ff3742);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+
+
+.bottom-actions {
+  text-align: left;
+}
+
+.clear-completed {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff6b9d, #c44569);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .todo-app {
+    padding: 15px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .category-select, .todo-input, .todo-add {
+    width: 100%;
+  }
+  
+  .controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .stats-bar {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .stat {
+    flex: 1;
+    min-width: 80px;
+  }
+  
+  .task-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
