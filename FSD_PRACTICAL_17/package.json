@@ -1,0 +1,32 @@
+{
+  "name": "practical17-fsd",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^8.18.3",
+    "morgan": "~1.9.1"
+  },
+  "description": "You're developing an admin panel for a tuition class. The admin should be able to add, view, edit, and delete student data. Use MongoDB for data storage and Express JS for routes. Each operation should be reflected in the database. Develop a simple UI or API to efficiently manage these records. \r \"# FSD_PRACTICAL_17\"",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ompatel2109/FSD_PRACTICAL_17.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ompatel2109/FSD_PRACTICAL_17/issues"
+  },
+  "homepage": "https://github.com/ompatel2109/FSD_PRACTICAL_17#readme"
+}
