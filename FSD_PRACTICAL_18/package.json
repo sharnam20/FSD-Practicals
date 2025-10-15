@@ -1,0 +1,32 @@
+{
+  "name": "practical18-fsd",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^8.18.3",
+    "morgan": "~1.9.1"
+  },
+  "description": "A mobile developer needs a backend for a notes-taking app. Create a RESTful API using Express and MongoDB to handle notes. Implement endpoints to create, read, update, and delete notes. Use Postman or similar tool to test API responses. Ensure that each note has a title, content, and timestamp. \r \"# FSD_PRACTICAL_18\"",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ompatel2109/FSD_PRACTICAL_18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ompatel2109/FSD_PRACTICAL_18/issues"
+  },
+  "homepage": "https://github.com/ompatel2109/FSD_PRACTICAL_18#readme"
+}
